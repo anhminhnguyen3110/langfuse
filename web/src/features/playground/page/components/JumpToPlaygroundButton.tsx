@@ -3,6 +3,8 @@ import { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/router";
 import { v4 as uuidv4 } from "uuid";
 
+import { nanoid } from "nanoid";
+
 import { createEmptyMessage } from "@/src/components/ChatMessages/utils/createEmptyMessage";
 import { Button } from "@/src/components/ui/button";
 import {
@@ -535,7 +537,7 @@ function parseStructuredOutputSchema(
 
       if (parseStructuredOutputSchema.success)
         return {
-          id: Math.random().toString(36).substring(2),
+          id: nanoid(),
           name: parseStructuredOutputSchema.data.json_schema.name,
           description: "Schema parsed from generation",
           schema: parseStructuredOutputSchema.data.json_schema.schema,
@@ -558,7 +560,7 @@ function parseStructuredOutputSchema(
 
       if (parseStructuredOutputSchema.success)
         return {
-          id: Math.random().toString(36).substring(2),
+          id: nanoid(),
           name: parseStructuredOutputSchema.data.json_schema.name,
           description: "Schema parsed from generation",
           schema: parseStructuredOutputSchema.data.json_schema.schema,

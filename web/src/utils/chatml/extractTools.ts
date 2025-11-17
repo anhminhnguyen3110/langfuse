@@ -1,6 +1,7 @@
 import { z } from "zod/v4";
 import { OpenAIToolSchema } from "@langfuse/shared";
 import type { PlaygroundTool } from "@/src/features/playground/page/types";
+import { nanoid } from "nanoid";
 import { extractAdditionalInput } from "./core";
 
 /**
@@ -11,7 +12,7 @@ function mapToolsToPlayground(
   tools: z.infer<typeof OpenAIToolSchema>[],
 ): PlaygroundTool[] {
   return tools.map((tool) => ({
-    id: Math.random().toString(36).substring(2),
+    id: nanoid(),
     name: tool.function.name,
     description: tool.function.description ?? "",
     parameters: tool.function.parameters,
@@ -76,7 +77,7 @@ export function extractTools(
     );
     if (firstMessageWithTools && Array.isArray(firstMessageWithTools.tools)) {
       return firstMessageWithTools.tools.map((tool: any) => ({
-        id: Math.random().toString(36).substring(2),
+        id: nanoid(),
         name: tool.name || tool.function?.name,
         description: tool.description ?? tool.function?.description ?? "",
         parameters: tool.parameters || tool.function?.parameters,
@@ -88,7 +89,7 @@ export function extractTools(
   const additionalInput = extractAdditionalInput(input);
   if (additionalInput?.tools && Array.isArray(additionalInput.tools)) {
     return additionalInput.tools.map((tool: any) => ({
-      id: Math.random().toString(36).substring(2),
+      id: nanoid(),
       name: tool.name || tool.function?.name,
       description: tool.description ?? tool.function?.description ?? "",
       parameters: tool.parameters || tool.function?.parameters,

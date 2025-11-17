@@ -386,7 +386,7 @@ describe("Saved View Validation (Backward & Forward Compatibility)", () => {
         column: "User ID",
         type: "string",
         operator: "contains",
-        value: "test-user",
+        value: TEST_DISPLAY_NAME,
       },
       {
         column: "name",
