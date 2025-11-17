@@ -38,6 +38,8 @@ info:
     Are you looking for the full Langfuse API?
 
     Check out our [API reference](https://api.reference.langfuse.com/#overview).
+security:
+  - BearerAuth: []
 paths:
   /api/admin/organizations:
     get:

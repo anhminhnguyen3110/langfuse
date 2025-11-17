@@ -30,10 +30,12 @@ export default async function auth(req: NextApiRequest, res: NextApiResponse) {
     const errorDescription = req.query.error_description;
     const basePath = env.NEXT_PUBLIC_BASE_PATH ?? "";
 
+    // Security: Use fixed path to prevent open redirect attacks
     // Redirect directly to sign-in with error and error_description preserved
     // This bypasses NextAuth's error page which strips error_description
+    const safeRedirectPath = `${basePath}/auth/sign-in`;
     return res.redirect(
-      `${basePath}/auth/sign-in?error=${encodeURIComponent(error)}&error_description=${encodeURIComponent(errorDescription)}`,
+      `${safeRedirectPath}?error=${encodeURIComponent(error)}&error_description=${encodeURIComponent(errorDescription)}`,
     );
   }
 

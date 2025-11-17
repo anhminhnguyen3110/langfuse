@@ -48,7 +48,9 @@ import DOMPurify from "dompurify";
 
 const credentialAuthForm = z.object({
   email: z.string().email(),
-  password: z.string().min(8, {
+  password: z.string().min(1, {
+    message: "Password is required and cannot be empty",
+  }).min(8, {
     message: "Password must be at least 8 characters long",
   }),
 });

@@ -7,7 +7,8 @@ export function compileHandlebarString(
   context: Record<string, any>,
 ): string {
   try {
-    const template = Handlebars.compile(handlebarString, { noEscape: true });
+    // Security: HTML escaping enabled by default to prevent XSS attacks
+    const template = Handlebars.compile(handlebarString);
     return template(context);
   } catch (error) {
     logger.info("Handlebars compilation error:", error);

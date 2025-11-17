@@ -48,14 +48,16 @@ const prepareProjectsAndApiKeys = async (
       where: { id: apiKeyId },
     });
     if (!apiKeyExists) {
+      // Security: Use cryptographically secure random generation for API keys
+      const crypto = await import('crypto');
       const sk = await hashSecretKey(
-        `sk-${Math.random().toString(36).substr(2, 9)}`,
+        `sk-${crypto.randomBytes(16).toString('base64url').substring(0, 32)}`,
       );
       await prisma.apiKey.create({
         data: {
           id: apiKeyId,
           note: `API Key for ${projectId}`,
-          publicKey: `pk-${Math.random().toString(36).substr(2, 9)}`,
+          publicKey: `pk-${crypto.randomBytes(16).toString('base64url').substring(0, 32)}`,
           hashedSecretKey: sk,
           displaySecretKey: getDisplaySecretKey(sk),
           scope: "PROJECT",

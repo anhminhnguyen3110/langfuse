@@ -23,6 +23,8 @@ info:
 
     - Postman collection:
     https://cloud.langfuse.com/generated/postman/collection.json
+security:
+  - BasicAuth: []
 paths:
   /api/public/annotation-queues:
     get:

@@ -116,12 +116,13 @@ ARG GID=1001
 RUN addgroup --system --gid ${GID} nodejs
 RUN adduser --system --uid ${UID} nextjs
 
-RUN npm install -g --no-package-lock --no-save prisma@6.17.1
+RUN npm install -g --no-package-lock --no-save --no-audit --ignore-scripts prisma@6.17.1 && \
+    npm list -g prisma --depth=0 | grep "6.17.1" || true
 
 # Install dd-trace only if NEXT_PUBLIC_LANGFUSE_CLOUD_REGION is configured
 ARG NEXT_PUBLIC_LANGFUSE_CLOUD_REGION
 RUN if [ -n "$NEXT_PUBLIC_LANGFUSE_CLOUD_REGION" ]; then \
-    npm install --no-package-lock --no-save dd-trace@5.65.0; \
+    npm install --no-package-lock --no-save --no-audit --ignore-scripts dd-trace@5.65.0; \
     fi
 
 RUN MIGRATE_TARGET_ARCH=$(echo ${TARGETPLATFORM:-linux/amd64} | sed 's/\//-/g') && \

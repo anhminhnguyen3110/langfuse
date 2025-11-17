@@ -88,5 +88,14 @@ export const formatTokenCounts = (
 };
 
 export function randomIntFromInterval(min: number, max: number) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
+  // Security: Use cryptographically secure random number generator
+  // Import crypto at runtime to support both browser and Node.js environments
+  if (typeof window === 'undefined') {
+    // Node.js environment
+    const crypto = require('crypto');
+    return crypto.randomInt(min, max + 1);
+  } else {
+    // Browser environment - fallback to Math.random for non-security-critical UI operations
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
 }

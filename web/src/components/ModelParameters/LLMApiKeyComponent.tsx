@@ -5,6 +5,9 @@ import { api } from "@/src/utils/api";
 import { type UIModelParams } from "@langfuse/shared";
 import { useHasProjectAccess } from "@/src/features/rbac/utils/checkProjectAccess";
 
+import { Button } from "@/src/components/ui/button";
+import { copyTextToClipboard } from "@/src/utils/clipboard";
+
 export const LLMApiKeyComponent = (p: {
   projectId: string;
   modelParams: UIModelParams;
@@ -48,7 +51,14 @@ export const LLMApiKeyComponent = (p: {
         {apiKey ? (
           <Link href={`/project/${p.projectId}/settings/llm-connections`}>
             <span className="mr-2 rounded-sm bg-input p-1 text-xs">
-              {apiKey.displaySecretKey}
+              <span className="mr-2">{apiKey.displaySecretKey}</span>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => copyTextToClipboard(apiKey.displaySecretKey)}
+              >
+                Copy
+              </Button>
             </span>
           </Link>
         ) : undefined}
