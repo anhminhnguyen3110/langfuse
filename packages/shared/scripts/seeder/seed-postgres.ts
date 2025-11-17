@@ -671,7 +671,7 @@ async function generatePrompts(project: Project) {
 
   for (const prompt of SEED_CHAT_ML_PROMPTS) {
     const promptId = `prompt-${v4()}`;
-    const versions = Math.floor(Math.random() * 20) + 1;
+    const versions = crypto.randomInt(1, 20 + 1);
     for (let i = 1; i <= versions; i++) {
       const versionAddition = [
         {
