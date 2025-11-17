@@ -73,6 +73,7 @@ jest.mock("@langfuse/shared", () => {
 import { normalizeInput, normalizeOutput } from "./adapters";
 import { convertChatMlToPlayground } from "./playgroundConverter";
 import { extractTools } from "./extractTools";
+import { TEST_EMAIL, TEST_DISPLAY_NAME } from "@/src/__tests__/test-fixtures";
 
 describe("Playground Jump Full Pipeline", () => {
   it("should convert full trace with tool calls through mapper and playground conversion", () => {
@@ -155,8 +156,8 @@ describe("Playground Jump Full Pipeline", () => {
           role: "tool",
           content: JSON.stringify({
             userInfo: {
-              displayName: "Test User",
-              email: "test@example.com",
+              displayName: TEST_DISPLAY_NAME,
+              email: TEST_EMAIL,
             },
           }),
           tool_call_id: "call_user_info_001",

@@ -21,6 +21,7 @@ import {
   generateEvalTraceId,
 } from "./seed-helpers";
 import { v4 as uuidv4 } from "uuid";
+import crypto from "node:crypto";
 import {
   FAILED_EVAL_TRACE_INTERVAL,
   SEED_EVALUATOR_CONFIGS,
@@ -61,15 +62,17 @@ export class DataGenerator {
   }
 
   private randomElement<T>(array: T[]): T {
-    return array[Math.floor(Math.random() * array.length)];
+    const idx = crypto.randomInt(0, array.length);
+    return array[idx];
   }
 
   private randomBoolean(probability: number = 0.5): boolean {
-    return Math.random() < probability;
+    // Use cryptographically secure RNG
+    return crypto.randomInt(0, 1000000) < Math.floor(probability * 1000000);
   }
 
   private randomInt(min: number, max: number): number {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    return crypto.randomInt(min, max + 1);
   }
 
   /**
@@ -233,7 +236,7 @@ export class DataGenerator {
       trace_id: trace.id,
       project_id: projectId,
       name: this.randomElement(scoreNames),
-      value: Math.random() * 100,
+      value: crypto.randomInt(0, 1000000) / 10000,
       string_value: undefined,
       data_type: "NUMERIC",
       source: "API",
@@ -261,7 +264,7 @@ export class DataGenerator {
       project_id: projectId,
       dataset_run_id: runId,
       name: this.randomElement(scoreNames),
-      value: Math.random() * 100,
+      value: crypto.randomInt(0, 1000000) / 10000,
       string_value: undefined,
       data_type: "NUMERIC",
       source: "API",
@@ -571,7 +574,7 @@ export class DataGenerator {
 
         switch (scoreType) {
           case "NUMERIC":
-            value = Math.random() * 100;
+            value = crypto.randomInt(0, 1000000) / 10000;
             break;
           case "CATEGORICAL":
             stringValue = `category_${this.randomInt(1, 5)}`;
@@ -1057,9 +1060,9 @@ export class DataGenerator {
     const observations: ObservationRecordInsertType[] = dialogues
       .map((d, index) => {
         const start = now + index * 1000 + 50;
-        const end = start + 400 + Math.floor(Math.random() * 400);
-        const inputTokens = 80 + Math.floor(Math.random() * 60);
-        const outputTokens = 60 + Math.floor(Math.random() * 60);
+        const end = start + 400 + crypto.randomInt(0, 400);
+        const inputTokens = 80 + crypto.randomInt(0, 60);
+        const outputTokens = 60 + crypto.randomInt(0, 60);
         const totalTokens = inputTokens + outputTokens;
 
         const baseGen: ObservationRecordInsertType = {
@@ -1176,7 +1179,7 @@ export class DataGenerator {
           observation_id: null,
           environment: "default",
           name: "helpfulness",
-          value: 70 + Math.random() * 25,
+          value: 70 + (crypto.randomInt(0, 1000000) / 40000),
           source: "API",
           comment: "Heuristic helpfulness score",
           metadata: {},
@@ -1192,7 +1195,7 @@ export class DataGenerator {
           is_deleted: 0,
         };
 
-        const safeVal = Math.random() > 0.1 ? 1 : 0;
+        const safeVal = crypto.randomInt(0, 1000000) / 1000000 > 0.1 ? 1 : 0;
         const safety: ScoreRecordInsertType = {
           id: `support-chat-${index}-${projectId.slice(-8)}-score-safety`,
           project_id: projectId,
@@ -1281,7 +1284,7 @@ export class DataGenerator {
           trace_id: trace.id,
           observation_id: undefined, // Score is for the entire trace, not a specific observation
           name: `evaluation_score-${evalJobConfiguration.evalTemplateId}`,
-          value: Math.random() * 100, // Random evaluation score 0-100
+          value: crypto.randomInt(0, 1000000) / 10000, // Random evaluation score 0-100
           string_value: undefined,
           data_type: "NUMERIC",
           source: "EVAL",

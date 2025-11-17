@@ -2,6 +2,7 @@ import { randomUUID } from "node:crypto";
 import { parseArgs } from "node:util";
 import { hash } from "bcryptjs";
 import { v4 } from "uuid";
+import crypto from "node:crypto";
 import { encrypt } from "../../src/encryption";
 import {
   type JobConfiguration,
@@ -524,8 +525,8 @@ export async function createDatasets(
       for (let index = 0; index < data.items.length; index++) {
         const item = data.items[index];
         const sourceTraceId =
-          Math.random() > 0.3
-            ? `${Math.floor(Math.random() * 100)}`
+          crypto.randomInt(0, 1000000) / 1000000 > 0.3
+            ? `${crypto.randomInt(0, 100)}`
             : undefined;
 
         // Use upsert to prevent duplicates
@@ -544,7 +545,7 @@ export async function createDatasets(
             sourceObservationId: null,
             input: item.input,
             expectedOutput: item.output,
-            metadata: Math.random() > 0.5 ? { key: "value" } : undefined,
+            metadata: crypto.randomInt(0, 1000000) / 1000000 > 0.5 ? { key: "value" } : undefined,
           },
           update: {}, // Don't update if it exists
         });
@@ -565,7 +566,7 @@ export async function createDatasets(
             projectId,
             id: `demo-dataset-run-${datasetRunNumber}-${datasetName}-${projectId.slice(-8)}`,
             name: `demo-dataset-run-${datasetRunNumber}-${datasetName}`,
-            description: Math.random() > 0.5 ? "Dataset run description" : "",
+            description: crypto.randomInt(0, 1000000) / 1000000 > 0.5 ? "Dataset run description" : "",
             datasetId: dataset.id,
             metadata: [
               undefined,
@@ -639,7 +640,7 @@ export const PROMPT_IDS: string[] = [];
 async function generatePrompts(project: Project) {
   const promptIds = [];
   for (const prompt of SEED_TEXT_PROMPTS) {
-    const versions = Math.floor(Math.random() * 20) + 1;
+    const versions = crypto.randomInt(1, 20 + 1);
     for (let i = 1; i <= versions; i++) {
       const promptId = `prompt-${v4()}`;
       await prisma.prompt.upsert({
