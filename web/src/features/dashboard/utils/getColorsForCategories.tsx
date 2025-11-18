@@ -47,13 +47,10 @@ const predefinedColors: Color[] = [
   "stone",
 ];
 
+import { randomIntFromInterval } from "@/src/utils/numbers";
+
 export function getRandomColor() {
-  if (typeof window !== "undefined" && window.crypto && window.crypto.getRandomValues) {
-    const arr = new Uint32Array(1);
-    window.crypto.getRandomValues(arr);
-    return predefinedColors[arr[0] % predefinedColors.length];
-  }
-  return predefinedColors[Math.floor(Math.random() * predefinedColors.length)];
+  return predefinedColors[randomIntFromInterval(0, predefinedColors.length - 1)];
 }
 
 export function getColorsForCategories(categories: string[]): Color[] {

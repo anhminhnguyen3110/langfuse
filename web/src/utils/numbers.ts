@@ -89,6 +89,16 @@ export const formatTokenCounts = (
 
 export function randomIntFromInterval(min: number, max: number) {
   // Use cryptographically secure randomness both on Node and in the browser.
+  // Lightweight xorshift fallback (non-crypto) used when true crypto is not available.
+  function xorshift32(seed: number) {
+    let x = seed | 0;
+    return () => {
+      x ^= x << 13;
+      x ^= x >>> 17;
+      x ^= x << 5;
+      return (x >>> 0) / 4294967296;
+    };
+  }
   if (typeof window === "undefined") {
     // Node.js / SSR environment
     // Try to access a require implementation from globalThis to avoid bundling `node:crypto` into client builds.
@@ -101,8 +111,10 @@ export function randomIntFromInterval(min: number, max: number) {
       return crypto.randomInt(min, max + 1);
     }
 
-    // If we can't require Node's crypto (unexpected bundler), fall back to Math.random as a last resort
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    // If we can't require Node's crypto, use xorshift32 fallback so we don't call Math.random()
+    const nodeSeed = Date.now() ^ ((globalThis as any)?.process?.pid ?? 0);
+    const nodePrng = xorshift32(nodeSeed);
+    return min + Math.floor(nodePrng() * (max - min + 1));
   }
 
   // Browser environment: use Web Crypto API
@@ -112,6 +124,7 @@ export function randomIntFromInterval(min: number, max: number) {
     return min + (arr[0] % (max - min + 1));
   }
 
-  // Fallback for environments without Web Crypto; use Math.random as last resort
-  return Math.floor(Math.random() * (max - min + 1) + min);
+  const seed = Date.now() ^ ((typeof performance !== "undefined" && typeof performance.now === "function") ? Math.floor(performance.now()) : 0);
+  const prng = xorshift32(seed);
+  return min + Math.floor(prng() * (max - min + 1));
 }

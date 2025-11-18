@@ -1,4 +1,5 @@
 import { cn } from "@/src/utils/tailwind";
+import { randomIntFromInterval } from "@/src/utils/numbers";
 import { useMemo } from "react";
 
 export interface HeatmapSkeletonProps {
@@ -92,14 +93,7 @@ export function HeatmapSkeleton({
   className,
 }: HeatmapSkeletonProps) {
   // Generate random seed once on component mount for pattern variation
-  const randomSeed = useMemo(() => {
-    if (typeof window !== "undefined" && window.crypto && window.crypto.getRandomValues) {
-      const arr = new Uint32Array(1);
-      window.crypto.getRandomValues(arr);
-      return arr[0] % 1000;
-    }
-    return Math.floor(Math.random() * 1000);
-  }, []);
+  const randomSeed = useMemo(() => randomIntFromInterval(0, 999), []);
 
   // Calculate cell dimensions - EXACT MATCH from Heatmap.tsx lines 99-102
   const cellWidth = "minmax(32px, 1fr)"; // Can grow wide
