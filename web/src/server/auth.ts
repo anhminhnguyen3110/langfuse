@@ -806,7 +806,8 @@ export async function getAuthOptions(): Promise<NextAuthOptions> {
             } else {
               // Add random delay to prevent leaking if user exists as otherwise it would be instant compared to sending an email
               await new Promise((resolve) =>
-                setTimeout(resolve, Math.random() * 2000 + 200),
+                // Use secure random delay to prevent predictable timing
+                setTimeout(resolve, Math.floor(crypto.randomInt(200, 2201))),
               );
               // Prevents sign in with email link if user does not exist
               return false;

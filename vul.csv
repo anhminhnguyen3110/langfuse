@@ -1,0 +1,166 @@
+
+Category	Primary Location	Line Number	Full Filename	GDPR
+Password Management: Hardcoded Password	api-auth.servertest.ts	196	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	44	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	527	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	355	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	277	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	711	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	89	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	771	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Privacy Violation	WebhookSecretRender.tsx	10	Src/langfuse/web/src/features/automations/components/WebhookSecretRender.tsx	Privacy Violation
+Privacy Violation	WebhookActionForm.tsx	394	Src/langfuse/web/src/features/automations/components/actions/WebhookActionForm.tsx	Privacy Violation
+Password Management: Hardcoded Password	api-auth.servertest.ts	294	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	585	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	26	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Privacy Violation	WebhookSecretRender.tsx	10	Src/langfuse/web/src/features/automations/components/WebhookSecretRender.tsx	Privacy Violation
+Privacy Violation	ResetPasswordButton.tsx	80	Src/langfuse/web/src/features/auth-credentials/components/ResetPasswordButton.tsx	Privacy Violation
+Password Management: Hardcoded Password	api-auth.servertest.ts	572	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	601	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	511	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Privacy Violation	WebhookActionForm.tsx	394	Src/langfuse/web/src/features/automations/components/actions/WebhookActionForm.tsx	Privacy Violation
+Privacy Violation	WebhookActionForm.tsx	394	Src/langfuse/web/src/features/automations/components/actions/WebhookActionForm.tsx	Privacy Violation
+Privacy Violation	WebhookSecretRender.tsx	10	Src/langfuse/web/src/features/automations/components/WebhookSecretRender.tsx	Privacy Violation
+Password Management: Hardcoded Password	api-auth.servertest.ts	519	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	406	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Privacy Violation	ResetPasswordPage.tsx	110	Src/langfuse/web/src/features/auth-credentials/components/ResetPasswordPage.tsx	Privacy Violation
+Privacy Violation	WebhookActionForm.tsx	410	Src/langfuse/web/src/features/automations/components/actions/WebhookActionForm.tsx	Privacy Violation
+Password Management: Hardcoded Password	api-auth.servertest.ts	616	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+OpenAPI Misconfiguration: Missing Global Security Requirement	openapi.yml	1	Src/langfuse/web/public/generated/organizations-api/openapi.yml	Insufficient Data Protection
+Privacy Violation	WebhookActionForm.tsx	394	Src/langfuse/web/src/features/automations/components/actions/WebhookActionForm.tsx	Privacy Violation
+OpenAPI Misconfiguration: Missing Global Security Requirement	openapi.yml	1	Src/langfuse/web/public/generated/api-client/openapi.yml	Insufficient Data Protection
+Privacy Violation	ResetPasswordPage.tsx	110	Src/langfuse/web/src/features/auth-credentials/components/ResetPasswordPage.tsx	Privacy Violation
+OpenAPI Misconfiguration: Missing Global Security Requirement	openapi.yml	1	Src/langfuse/web/public/generated/api/openapi.yml	Insufficient Data Protection
+Privacy Violation	WebhookActionForm.tsx	394	Src/langfuse/web/src/features/automations/components/actions/WebhookActionForm.tsx	Privacy Violation
+Password Management: Hardcoded Password	README.md	44	Src/langfuse/worker/src/scripts/replayIngestionEvents/README.md	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	58	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	489	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Privacy Violation	WebhookActionForm.tsx	394	Src/langfuse/web/src/features/automations/components/actions/WebhookActionForm.tsx	Privacy Violation
+Password Management: Hardcoded Password	api-auth.servertest.ts	143	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Privacy Violation	WebhookActionForm.tsx	394	Src/langfuse/web/src/features/automations/components/actions/WebhookActionForm.tsx	Privacy Violation
+Password Management: Hardcoded Password	api-auth.servertest.ts	624	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Privacy Violation	WebhookSecretRender.tsx	10	Src/langfuse/web/src/features/automations/components/WebhookSecretRender.tsx	Privacy Violation
+Privacy Violation	sign-in.tsx	710	Src/langfuse/web/src/pages/auth/sign-in.tsx	Privacy Violation
+Privacy Violation	sign-in.tsx	710	Src/langfuse/web/src/pages/auth/sign-in.tsx	Privacy Violation
+Privacy Violation	sign-in.tsx	710	Src/langfuse/web/src/pages/auth/sign-in.tsx	Privacy Violation
+Password Management: Hardcoded Password	api-auth.servertest.ts	181	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Privacy Violation	ResetPasswordPage.tsx	110	Src/langfuse/web/src/features/auth-credentials/components/ResetPasswordPage.tsx	Privacy Violation
+Privacy Violation	ResetPasswordPage.tsx	110	Src/langfuse/web/src/features/auth-credentials/components/ResetPasswordPage.tsx	Privacy Violation
+Password Management: Hardcoded Password	api-auth.servertest.ts	577	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+OpenAPI Misconfiguration: Missing Operation Security Requirement	openapi.yml	1	Src/langfuse/web/public/generated/api/openapi.yml	Insufficient Data Protection
+Insecure Transport	index.ts	6	Src/langfuse/worker/src/index.ts	Insufficient Data Protection
+Privacy Violation	WebhookActionForm.tsx	394	Src/langfuse/web/src/features/automations/components/actions/WebhookActionForm.tsx	Privacy Violation
+Privacy Violation	WebhookActionForm.tsx	394	Src/langfuse/web/src/features/automations/components/actions/WebhookActionForm.tsx	Privacy Violation
+Privacy Violation	WebhookActionForm.tsx	394	Src/langfuse/web/src/features/automations/components/actions/WebhookActionForm.tsx	Privacy Violation
+Privacy Violation	ResetPasswordPage.tsx	110	Src/langfuse/web/src/features/auth-credentials/components/ResetPasswordPage.tsx	Privacy Violation
+Password Management: Hardcoded Password	api-auth.servertest.ts	136	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	475	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	768	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	82	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	707	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	457	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	213	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Command Injection	test-utils.ts	65	Src/langfuse/web/src/__tests__/test-utils.ts	Indirect Access to Sensitive Data
+Command Injection	test-utils.ts	33	Src/langfuse/web/src/__tests__/test-utils.ts	Indirect Access to Sensitive Data
+Privacy Violation	WebhookSecretRender.tsx	10	Src/langfuse/web/src/features/automations/components/WebhookSecretRender.tsx	Privacy Violation
+Open Redirect	[...nextauth].ts	36	Src/langfuse/web/src/pages/api/auth/[...nextauth].ts	Indirect Access to Sensitive Data
+Privacy Violation	LLMApiKeyComponent.tsx	50	Src/langfuse/web/src/components/ModelParameters/LLMApiKeyComponent.tsx	Privacy Violation
+Password Management: Hardcoded Password	scim.yml	94	Src/langfuse/fern/apis/server/definition/scim.yml	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	webhooks.test.ts	710	Src/langfuse/worker/src/__tests__/webhooks.test.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	admin-api-key-auth.servertest.ts	224	Src/langfuse/web/src/__tests__/admin-api-key-auth.servertest.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	llm-api-key.servertest.ts	282	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	api-auth.servertest.ts	834	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Password Management: Empty Password	sign-in.tsx	588	Src/langfuse/web/src/pages/auth/sign-in.tsx	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	llm-api-key.servertest.ts	355	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Insecure Randomness	data-generators.ts	72	Src/langfuse/packages/shared/scripts/seeder/utils/data-generators.ts	Insufficient Data Protection
+Insecure Randomness	resizable-image.tsx	104	Src/langfuse/web/src/components/ui/resizable-image.tsx	Insufficient Data Protection
+Insecure Randomness	data-generators.ts	64	Src/langfuse/packages/shared/scripts/seeder/utils/data-generators.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	llm-connections-api.servertest.ts	930	Src/langfuse/web/src/__tests__/async/llm-connections-api.servertest.ts	Insufficient Data Protection
+Key Management: Hardcoded Encryption Key	llm-connections-api.servertest.ts	648	Src/langfuse/web/src/__tests__/async/llm-connections-api.servertest.ts	Insufficient Data Protection
+Key Management: Hardcoded Encryption Key	llm-connections-api.servertest.ts	908	Src/langfuse/web/src/__tests__/async/llm-connections-api.servertest.ts	Insufficient Data Protection
+Key Management: Hardcoded Encryption Key	llm-connections-api.servertest.ts	941	Src/langfuse/web/src/__tests__/async/llm-connections-api.servertest.ts	Insufficient Data Protection
+Key Management: Hardcoded Encryption Key	llm-api-key.servertest.ts	245	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Insecure Randomness	seed-postgres.ts	568	Src/langfuse/packages/shared/scripts/seeder/seed-postgres.ts	Insufficient Data Protection
+Insecure Randomness	seed-postgres.ts	547	Src/langfuse/packages/shared/scripts/seeder/seed-postgres.ts	Insufficient Data Protection
+Insecure Randomness	seed-postgres.ts	528	Src/langfuse/packages/shared/scripts/seeder/seed-postgres.ts	Insufficient Data Protection
+Insecure Randomness	seed-postgres.ts	527	Src/langfuse/packages/shared/scripts/seeder/seed-postgres.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	webhooks.test.ts	763	Src/langfuse/worker/src/__tests__/webhooks.test.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	automations-trpc.servertest.ts	621	Src/langfuse/web/src/__tests__/async/automations-trpc.servertest.ts	Insufficient Data Protection
+Insecure Randomness	JumpToPlaygroundButton.tsx	557	Src/langfuse/web/src/features/playground/page/components/JumpToPlaygroundButton.tsx	Insufficient Data Protection
+Insecure Randomness	JumpToPlaygroundButton.tsx	534	Src/langfuse/web/src/features/playground/page/components/JumpToPlaygroundButton.tsx	Insufficient Data Protection
+Insecure Randomness	data-generators.ts	1060	Src/langfuse/packages/shared/scripts/seeder/utils/data-generators.ts	Insufficient Data Protection
+Insecure Randomness	data-generators.ts	574	Src/langfuse/packages/shared/scripts/seeder/utils/data-generators.ts	Insufficient Data Protection
+Insecure Randomness	data-generators.ts	1062	Src/langfuse/packages/shared/scripts/seeder/utils/data-generators.ts	Insufficient Data Protection
+Insecure Randomness	data-generators.ts	1179	Src/langfuse/packages/shared/scripts/seeder/utils/data-generators.ts	Insufficient Data Protection
+Insecure Randomness	data-generators.ts	1284	Src/langfuse/packages/shared/scripts/seeder/utils/data-generators.ts	Insufficient Data Protection
+Insecure Randomness	MarkdownViewer.tsx	221	Src/langfuse/web/src/components/ui/MarkdownViewer.tsx	Insufficient Data Protection
+Password Management: Empty Password	sign-up.tsx	74	Src/langfuse/web/src/pages/auth/sign-up.tsx	Insufficient Data Protection
+OpenAPI Misconfiguration: Weak Authentication	openapi.yml	1	Src/langfuse/web/public/generated/api/openapi.yml	Access Violation
+Key Management: Empty Encryption Key	webhookHelpers.ts	167	Src/langfuse/web/src/features/automations/server/webhookHelpers.ts	Insufficient Data Protection
+Insecure Randomness	data-generators.ts	1195	Src/langfuse/packages/shared/scripts/seeder/utils/data-generators.ts	Insufficient Data Protection
+Insecure Randomness	data-generators.ts	1061	Src/langfuse/packages/shared/scripts/seeder/utils/data-generators.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	automations-trpc.servertest.ts	650	Src/langfuse/web/src/__tests__/async/automations-trpc.servertest.ts	Insufficient Data Protection
+Insecure Randomness	seed-postgres.ts	673	Src/langfuse/packages/shared/scripts/seeder/seed-postgres.ts	Insufficient Data Protection
+Insecure Randomness	seed-postgres.ts	642	Src/langfuse/packages/shared/scripts/seeder/seed-postgres.ts	Insufficient Data Protection
+Insecure Randomness	auth.ts	784	Src/langfuse/web/src/server/auth.ts	Insufficient Data Protection
+Insecure Randomness	load-seed-clickhouse.ts	58	Src/langfuse/packages/shared/scripts/seeder/load-seed-clickhouse.ts	Insufficient Data Protection
+Insecure Randomness	load-seed-clickhouse.ts	52	Src/langfuse/packages/shared/scripts/seeder/load-seed-clickhouse.ts	Insufficient Data Protection
+Insecure Randomness	getColorsForCategories.tsx	51	Src/langfuse/web/src/features/dashboard/utils/getColorsForCategories.tsx	Insufficient Data Protection
+Insecure Randomness	numbers.ts	91	Src/langfuse/web/src/utils/numbers.ts	Insufficient Data Protection
+Privacy Violation	headerUtils.ts	77	Src/langfuse/packages/shared/src/server/utils/headerUtils.ts	Privacy Violation
+Key Management: Hardcoded Encryption Key	signature.test.ts	36	Src/langfuse/worker/src/__tests__/signature.test.ts	Insufficient Data Protection
+Key Management: Hardcoded Encryption Key	llm-connections-api.servertest.ts	928	Src/langfuse/web/src/__tests__/async/llm-connections-api.servertest.ts	Insufficient Data Protection
+Key Management: Empty Encryption Key	CreateLLMApiKeyForm.tsx	200	Src/langfuse/web/src/features/public-api/components/CreateLLMApiKeyForm.tsx	Insufficient Data Protection
+Insecure Randomness	evalService.ts	524	Src/langfuse/worker/src/features/evaluation/evalService.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	llm-connections-api.servertest.ts	772	Src/langfuse/web/src/__tests__/async/llm-connections-api.servertest.ts	Insufficient Data Protection
+Key Management: Empty Encryption Key	CreateLLMApiKeyForm.tsx	217	Src/langfuse/web/src/features/public-api/components/CreateLLMApiKeyForm.tsx	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	automations-trpc.servertest.ts	206	Src/langfuse/web/src/__tests__/async/automations-trpc.servertest.ts	Insufficient Data Protection
+Key Management: Hardcoded Encryption Key	llm-connections-api.servertest.ts	1068	Src/langfuse/web/src/__tests__/async/llm-connections-api.servertest.ts	Insufficient Data Protection
+Insecure Randomness	data-generators.ts	236	Src/langfuse/packages/shared/scripts/seeder/utils/data-generators.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	organizations-api.servertest.ts	158	Src/langfuse/web/src/__tests__/async/organizations-api.servertest.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	llm-connections-api.servertest.ts	1070	Src/langfuse/web/src/__tests__/async/llm-connections-api.servertest.ts	Insufficient Data Protection
+Insecure Randomness	api-auth.servertest.ts	800	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Insecure Randomness	api-auth.servertest.ts	740	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	ingestion-unit.servertest.ts	93	Src/langfuse/web/src/__tests__/ingestion-unit.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	pnpm-lock.yaml	17019	Src/langfuse/pnpm-lock.yaml	Insufficient Data Protection
+Insecure Randomness	auth.spec.ts	63	Src/langfuse/web/src/__e2e__/auth.spec.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	llm-api-key.servertest.ts	240	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	llm-api-key.servertest.ts	176	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Insecure Randomness	sidebar.tsx	688	Src/langfuse/web/src/components/ui/sidebar.tsx	Insufficient Data Protection
+Insecure Randomness	score-comparison-analytics.servertest.ts	747	Src/langfuse/web/src/__tests__/async/score-comparison-analytics.servertest.ts	Insufficient Data Protection
+Insecure Randomness	score-comparison-analytics.servertest.ts	730	Src/langfuse/web/src/__tests__/async/score-comparison-analytics.servertest.ts	Insufficient Data Protection
+Insecure Randomness	score-comparison-analytics.servertest.ts	649	Src/langfuse/web/src/__tests__/async/score-comparison-analytics.servertest.ts	Insufficient Data Protection
+Insecure Randomness	score-comparison-analytics.servertest.ts	636	Src/langfuse/web/src/__tests__/async/score-comparison-analytics.servertest.ts	Insufficient Data Protection
+Insecure Randomness	score-comparison-analytics.servertest.ts	619	Src/langfuse/web/src/__tests__/async/score-comparison-analytics.servertest.ts	Insufficient Data Protection
+Insecure Randomness	score-comparison-analytics.servertest.ts	516	Src/langfuse/web/src/__tests__/async/score-comparison-analytics.servertest.ts	Insufficient Data Protection
+Insecure Randomness	score-comparison-analytics.servertest.ts	502	Src/langfuse/web/src/__tests__/async/score-comparison-analytics.servertest.ts	Insufficient Data Protection
+Insecure Randomness	score-comparison-analytics.servertest.ts	379	Src/langfuse/web/src/__tests__/async/score-comparison-analytics.servertest.ts	Insufficient Data Protection
+Insecure Randomness	score-comparison-analytics.servertest.ts	365	Src/langfuse/web/src/__tests__/async/score-comparison-analytics.servertest.ts	Insufficient Data Protection
+Insecure Randomness	api-auth.servertest.ts	818	Src/langfuse/web/src/__tests__/api-auth.servertest.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	admin-api-key-auth.servertest.ts	194	Src/langfuse/web/src/__tests__/admin-api-key-auth.servertest.ts	Insufficient Data Protection
+Insecure Randomness	HeatmapSkeleton.tsx	95	Src/langfuse/web/src/features/score-analytics/components/charts/HeatmapSkeleton.tsx	Insufficient Data Protection
+Key Management: Hardcoded Encryption Key	llm-connections-api.servertest.ts	692	Src/langfuse/web/src/__tests__/async/llm-connections-api.servertest.ts	Insufficient Data Protection
+Insecure Randomness	data-generators.ts	264	Src/langfuse/packages/shared/scripts/seeder/utils/data-generators.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	llm-api-key.servertest.ts	350	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	llm-api-key.servertest.ts	274	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	llm-api-key.servertest.ts	211	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	llm-api-key.servertest.ts	140	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	llm-api-key.servertest.ts	93	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	llm-api-key.servertest.ts	56	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Insecure Randomness	data-generators.ts	68	Src/langfuse/packages/shared/scripts/seeder/utils/data-generators.ts	Insufficient Data Protection
+Password Management: Empty Password	ResetPasswordPage.tsx	64	Src/langfuse/web/src/features/auth-credentials/components/ResetPasswordPage.tsx	Insufficient Data Protection
+Key Management: Empty Encryption Key	llm-connections-api.servertest.ts	461	Src/langfuse/web/src/__tests__/async/llm-connections-api.servertest.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	signature.test.ts	86	Src/langfuse/worker/src/__tests__/signature.test.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	signature.test.ts	66	Src/langfuse/worker/src/__tests__/signature.test.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	signature.test.ts	55	Src/langfuse/worker/src/__tests__/signature.test.ts	Insufficient Data Protection
+Password Management: Hardcoded Password	llm-api-key.servertest.ts	410	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Insecure Randomness	extractTools.ts	91	Src/langfuse/web/src/utils/chatml/extractTools.ts	Insufficient Data Protection
+Insecure Randomness	extractTools.ts	79	Src/langfuse/web/src/utils/chatml/extractTools.ts	Insufficient Data Protection
+Insecure Randomness	extractTools.ts	14	Src/langfuse/web/src/utils/chatml/extractTools.ts	Insufficient Data Protection
+Insecure Randomness	delays.ts	8	Src/langfuse/worker/src/queues/utils/delays.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	admin-api-key-auth.servertest.ts	177	Src/langfuse/web/src/__tests__/admin-api-key-auth.servertest.ts	Insufficient Data Protection
+Credential Management: Hardcoded API Credentials	llm-api-key.servertest.ts	415	Src/langfuse/web/src/__tests__/llm-api-key.servertest.ts	Insufficient Data Protection
+Insecure Randomness	llm-connections-api.servertest.ts	18	Src/langfuse/web/src/__tests__/async/llm-connections-api.servertest.ts	Insufficient Data Protection
+Dockerfile Misconfiguration: Dependency Confusion	Dockerfile	111	Src/langfuse/web/Dockerfile	Indirect Access to Sensitive Data
+Dockerfile Misconfiguration: Dependency Confusion	Dockerfile	52	Src/langfuse/worker/Dockerfile	Indirect Access to Sensitive Data
+Handlebars Misconfiguration: Escaping Disabled	utilities.ts	10	Src/langfuse/worker/src/features/utils/utilities.ts	Indirect Access to Sensitive Data

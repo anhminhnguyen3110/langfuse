@@ -101,7 +101,7 @@ export const ResizableImage = ({
               <Image
                 loader={customLoader}
                 src={src}
-                alt={alt ?? `Markdown Image-${Math.random()}`}
+                alt={alt ?? `Markdown Image-${nanoid()}`}
                 loading="lazy"
                 width={0}
                 height={0}

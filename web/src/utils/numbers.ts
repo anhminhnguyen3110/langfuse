@@ -88,14 +88,30 @@ export const formatTokenCounts = (
 };
 
 export function randomIntFromInterval(min: number, max: number) {
-  // Security: Use cryptographically secure random number generator
-  // Import crypto at runtime to support both browser and Node.js environments
-  if (typeof window === 'undefined') {
-    // Node.js environment
-    const crypto = require('crypto');
-    return crypto.randomInt(min, max + 1);
-  } else {
-    // Browser environment - fallback to Math.random for non-security-critical UI operations
-    return Math.floor(Math.random() * (max - min + 1) + min);
+  // Use cryptographically secure randomness both on Node and in the browser.
+  if (typeof window === "undefined") {
+    // Node.js / SSR environment
+    // Try to access a require implementation from globalThis to avoid bundling `node:crypto` into client builds.
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const nonWebpackRequire = (globalThis as any)?.__non_webpack_require__;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const nodeRequire: any = (globalThis as any)?.require ?? (typeof nonWebpackRequire === "function" ? nonWebpackRequire : undefined);
+    if (typeof nodeRequire === "function") {
+      const crypto = nodeRequire("crypto");
+      return crypto.randomInt(min, max + 1);
+    }
+
+    // If we can't require Node's crypto (unexpected bundler), fall back to Math.random as a last resort
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+
+  // Browser environment: use Web Crypto API
+  if (typeof window.crypto?.getRandomValues === "function") {
+    const arr = new Uint32Array(1);
+    window.crypto.getRandomValues(arr);
+    return min + (arr[0] % (max - min + 1));
+  }
+
+  // Fallback for environments without Web Crypto; use Math.random as last resort
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }

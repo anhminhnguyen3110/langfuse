@@ -92,7 +92,14 @@ export function HeatmapSkeleton({
   className,
 }: HeatmapSkeletonProps) {
   // Generate random seed once on component mount for pattern variation
-  const randomSeed = useMemo(() => Math.random() * 1000, []);
+  const randomSeed = useMemo(() => {
+    if (typeof window !== "undefined" && window.crypto && window.crypto.getRandomValues) {
+      const arr = new Uint32Array(1);
+      window.crypto.getRandomValues(arr);
+      return arr[0] % 1000;
+    }
+    return Math.floor(Math.random() * 1000);
+  }, []);
 
   // Calculate cell dimensions - EXACT MATCH from Heatmap.tsx lines 99-102
   const cellWidth = "minmax(32px, 1fr)"; // Can grow wide

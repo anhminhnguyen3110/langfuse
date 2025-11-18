@@ -218,7 +218,7 @@ function MarkdownRenderer({
               return language || isMultiLine ? (
                 // code block
                 <CodeBlock
-                  key={Math.random()}
+                  key={nanoid()}
                   language={language}
                   value={codeContent}
                   theme={theme}

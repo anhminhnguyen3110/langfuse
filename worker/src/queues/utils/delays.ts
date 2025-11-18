@@ -4,10 +4,9 @@ export const delayInMs = (attempt: number) => {
     maxMinutes: 10 + attempt * 5, // add a delay the more attempts we have
   };
 
-  const delay = Math.floor(
-    Math.random() * (range.maxMinutes - range.minMinutes + 1) +
-      range.minMinutes,
-  );
+  import { randomInt } from "node:crypto";
+  // Use cryptographically secure random integer for delay calculation
+  const delay = randomInt(range.minMinutes, range.maxMinutes + 1);
 
   return delay * 60 * 1000;
 };
